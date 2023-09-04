@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ToDo" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="android:background">@color/pink</item>
+        <item name="colorButtonNormal">@color/pink2</item>
+        <item name="colorBackgroundFloating">@color/pink</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Theme.ToDo" parent="Base.Theme.ToDo" />
+</resources>
