@@ -16,8 +16,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Task"
-        android:textSize="19sp"
-        android:maxWidth="250dp"
+        android:textSize="16sp"
+        android:maxWidth="220dp"
         android:background="?attr/cardBackgroundColor"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
@@ -27,11 +27,28 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <ImageButton
+        android:id="@+id/edit_btn"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/edit"
+        android:background="?attr/cardBackgroundColor"
+        android:scaleType="centerCrop"
+        android:textColor="@color/black"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/completed_btn"/>
+
+    <ImageButton
         android:id="@+id/completed_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Completed"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/done"
+        android:background="?attr/cardBackgroundColor"
+        android:scaleType="centerCrop"
         android:textColor="@color/black"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"

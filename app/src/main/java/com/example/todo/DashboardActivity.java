@@ -68,7 +68,7 @@ public class DashboardActivity extends AppCompatActivity {
                                 sqLiteDatabase.insert("todo", null, contentValues);
                                 sqLiteDatabase.close();
                                 updateList();
-                                Toast.makeText(DashboardActivity.this, "Text: " + input, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(DashboardActivity.this, "Task Added!", Toast.LENGTH_SHORT).show();
                                 alertDialog.dismiss();
                             }catch (Exception e){
                                 Toast.makeText(DashboardActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
